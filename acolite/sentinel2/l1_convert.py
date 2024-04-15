@@ -726,7 +726,7 @@ def l1_convert(inputfile, output = None, settings = {},
         if verbosity > 1:
             print('Conversion took {:.1f} seconds'.format(time.time()-t0))
             print('Created {}'.format(ofile))
-
+            sys.exit()
         if limit is not None: sub = None
         if ofile not in ofiles: ofiles.append(ofile)
 
